@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-16T13:56:07.483Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="MpSm2FcR81Z50wOLRD4l" version="18.0.4" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2022-05-23T08:09:17.370Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="vhC1JHoQBvII2gvp_E7o" version="18.0.7" type="github" pages="10">
   <diagram id="jOLiMJiAWf5GIvNFF9FP" name="Page-1">
     <mxGraphModel dx="1278" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -39,7 +39,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xwFcN-blnOtsRmMzOvvE-32" value="3. 返回验证码错误" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;" parent="1" target="xwFcN-blnOtsRmMzOvvE-4" edge="1">
+        <mxCell id="xwFcN-blnOtsRmMzOvvE-32" value="3. 如果验证码错误，返回验证码错误" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;" parent="1" target="xwFcN-blnOtsRmMzOvvE-4" edge="1">
           <mxGeometry x="-0.0124" relative="1" as="geometry">
             <mxPoint x="350" y="300" as="sourcePoint" />
             <mxPoint x="110" y="304" as="targetPoint" />
@@ -48,10 +48,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="xwFcN-blnOtsRmMzOvvE-35" value="数据库" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="470" y="100" width="100" height="140" as="geometry" />
+          <mxGeometry x="495" y="100" width="100" height="140" as="geometry" />
         </mxCell>
         <mxCell id="xwFcN-blnOtsRmMzOvvE-36" value="" style="points=[];perimeter=orthogonalPerimeter;spacingTop=0;spacing=1;verticalAlign=middle;horizontal=1;direction=west;labelPosition=center;verticalLabelPosition=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="505" y="240" width="30" height="170" as="geometry" />
+          <mxGeometry x="530" y="240" width="30" height="170" as="geometry" />
         </mxCell>
         <mxCell id="xwFcN-blnOtsRmMzOvvE-37" value="4. 验证登录信息" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;elbow=vertical;" parent="1" target="xwFcN-blnOtsRmMzOvvE-36" edge="1">
           <mxGeometry x="-0.0434" width="80" relative="1" as="geometry">
@@ -67,20 +67,10 @@
             <mxPoint x="90" y="381" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xwFcN-blnOtsRmMzOvvE-53" value="5. 验证失败" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;entryX=-0.033;entryY=0.545;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xwFcN-blnOtsRmMzOvvE-36" target="xwFcN-blnOtsRmMzOvvE-26" edge="1">
-          <mxGeometry x="0.05" relative="1" as="geometry">
-            <mxPoint x="500" y="330" as="sourcePoint" />
-            <mxPoint x="380" y="330" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="400" y="350" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="xwFcN-blnOtsRmMzOvvE-55" value="7. 验证成功" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;" parent="1" edge="1">
+        <mxCell id="xwFcN-blnOtsRmMzOvvE-53" value="5. 如果验证失败，&lt;br&gt;则执行 6；否则执行 7" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;exitX=1;exitY=0.279;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="xwFcN-blnOtsRmMzOvvE-36" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="500" y="400" as="sourcePoint" />
-            <mxPoint x="379" y="400" as="targetPoint" />
+            <mxPoint x="500" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="363" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xwFcN-blnOtsRmMzOvvE-57" value="10. 登录信息写入到&lt;br&gt;sessionStorage" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;elbow=vertical;" parent="1" edge="1">
@@ -94,21 +84,21 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xwFcN-blnOtsRmMzOvvE-58" value="9. 返回登录信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;" parent="1" edge="1">
+        <mxCell id="xwFcN-blnOtsRmMzOvvE-58" value="8. 返回登录信息" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;elbow=vertical;" parent="1" edge="1">
           <mxGeometry x="-0.04" relative="1" as="geometry">
             <mxPoint x="340" y="520" as="sourcePoint" />
             <mxPoint x="90" y="520" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xwFcN-blnOtsRmMzOvvE-61" value="8. 更新security登录用户&lt;br&gt;对象和生成token&amp;nbsp;&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;elbow=vertical;" parent="1" edge="1">
+        <mxCell id="xwFcN-blnOtsRmMzOvvE-61" value="7. 更新security登录用户&lt;br&gt;对象和生成token&amp;nbsp;&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;elbow=vertical;" parent="1" edge="1">
           <mxGeometry x="-0.8471" y="20" relative="1" as="geometry">
-            <mxPoint x="388" y="480" as="sourcePoint" />
+            <mxPoint x="380" y="480" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="459" y="480" />
               <mxPoint x="459" y="500" />
             </Array>
-            <mxPoint x="393" y="500" as="targetPoint" />
+            <mxPoint x="380" y="500" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
